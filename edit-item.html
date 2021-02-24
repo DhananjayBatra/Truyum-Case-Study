@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Menu Item</title>
+
+</head>
+<style>
+	
+body
+{
+	background-color: white;
+	margin: 0;
+}
+header
+{
+	height: 80px;
+	background-color: blue;
+
+	
+}
+#header-container
+{
+	width: 80%;
+	margin: auto;
+}
+.col-3
+{
+	
+	width: 33%;
+	float: left;
+
+}
+.col-4
+{
+   
+   float: right;
+}
+a:link
+{
+	color: red;
+	float: right;
+	font-size: 20;
+}
+footer {
+  text-align: left;
+  padding: 3px;
+  background-color: grey;
+  color: yellow;
+  margin-top: 130px;
+}
+input.savebutton
+{
+  background-color: blue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+</style>
+<body>
+
+</body>
+<header>
+<div id="header-container">
+	<div class="col-3">
+		<h1>Truyum   <img src="food.jpg" height="50" width="50"></h1>
+	</div>
+<div class="col-4">
+		<a href="menu.html" class="menuitems"><font size="6">Menu</font></a>
+	</div>
+</div>
+</header>
+<br>
+<br>
+<center>
+
+<table>
+	<th><h1>Edit Menu Items</h1></th>
+	<tr>
+		<td>Name </td>
+	</tr>
+	<tr>
+		<td><input type="text" name="menuitems" id="menuitems"></td>
+		</tr>
+
+	<tr>
+		<td>Price (In Rs)</td>
+		
+		<td>Active</td>
+		<td>        </td>
+		
+		<td>Date of Launch</td> 
+        
+		
+		<td>Category</td>
+		
+	</tr>
+	<tr>
+		<td><input type="number" name="price" id="price"></td>
+		<td><input type="radio" value="Yes" id="yes">
+			<label for="Yes">Yes</label>
+
+
+		</td>
+		<td><input type="radio" name="no" id="no">
+			<label for="No">No</label></td>	
+		<td><input type="Date" name="dol" id="dol"></td>
+	<td>
+		<select name="menu" id="menu">
+		<option value="Starters">Starters</option>
+		<option value="Main Course">Main Course</option>
+		<option value="Dessert">Dessert</option>
+		<option value="Drinks">Drinks</option>
+	</select>
+	</td>
+</tr>
+
+	<tr>
+		<td><input type="checkbox" name="freedelivery" id="freedelivery">
+			<label for="freedelivery">Free Delivery</label></td>
+	</tr>
+
+	<tr>
+		<td><form action="edit-menu-item-status.html">
+    <input type="submit" value="Save" class="savebutton" >
+</form>
+</td>
+</table>
+</center>
+
+<footer>
+	<p>Copyright 2019</p>
+</footer>
+
+</body>
+</html>
